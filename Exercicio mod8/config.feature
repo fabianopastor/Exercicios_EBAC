@@ -8,20 +8,9 @@ Para depois inserir no carrinho
 Contexto:
 Dado Seleções de cor, tamanho e quantidade devem ser obrigatórios
 
-Cenário: Selecionando apenas a cor
-Quando Eu Selecionando a cor
-Então deve ser exibida a mensagem "falta selecionar o tamanho e quantidade"
-
-Cenário: Selecionando apenas a cor e o tamanho
-Quando Eu Selecionando a cor
-E tamanho
-Então deve ser exibida a mensagem "falta seleciona a quantidade"
-
 Cenário: Selecionando a cor, tamanho e quantidade
-Quando Eu Selecionando a cor
-E tamanho
-E quantidade
-Então deve ser exibida a mensagem "Produto inserido no carrinho com Sucesso !"
+Quando Eu nao selecionar a cor ou tamanho ou quantidade
+Então deve ser exibida a mensagem "falta selecionar campo obrigatorio"
 
 
 Cenário: Selecionado até 10 produtos por venda
